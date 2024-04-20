@@ -1,0 +1,709 @@
+.sora-font {
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+strong {
+    color: #606060;
+}
+
+body {
+    background-image: url('Imagenes/4964089.jpg');
+    /* Ruta de la imagen de fondo */
+    background-size: cover;
+    /* Para que la imagen de fondo cubra todo el área del cuerpo */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-attachment: fixed;
+    /* Fija la imagen de fondo en su posición mientras se desplaza */
+    margin: 0;
+    font-family: "Sora", sans-serif;
+}
+
+/* <NAVIGATION BAR> */
+
+.nav-box {
+    overflow: hidden;
+    padding: 0 200px;
+}
+
+.nav-box a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    padding: 15px 12px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-box .icon {
+    display: none;
+}
+
+nav {
+    top: 0;
+    right: 0;
+    position: fixed;
+    background-color: #171717f4;
+    width: 100%;
+}
+
+nav a {
+    text-transform: unset;
+    font-weight: 660;
+
+}
+
+nav a:hover {
+    font-weight: 400;
+}
+
+/* <MAIN> */
+
+/* <CONTENT> */
+.content {
+    padding-top: 180px;
+}
+
+/* <FOTO PFP> */
+
+.margin-pfp {
+    width: 25%;
+    float: right;
+    margin: 0;
+}
+
+.container-pfp {
+    width: 280px;
+    /* ajusta el ancho*/
+    height: 280px;
+    /* ajusta la altura */
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px #00000099;
+    overflow: hidden;
+    /* oculta cualquier parte de la imagen que se desborde */
+}
+
+.pfp {
+    width: 100%;
+    /* asegura que la imagen llene todo el contenedor */
+    height: auto;
+    /* permite que la altura se ajuste automáticamente */
+    transition: transform 0.5s;
+}
+
+.pfp:hover {
+    transform: scale(1.05);
+}
+
+/* <TITULOS> */
+
+.margin-txtpresentacion {
+    width: 70%;
+    padding-left: 10px;
+    float: left;
+}
+
+h1,
+h2 {
+    margin: 10px 0;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+#typewriter {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* <SOCIAL> */
+
+.social {
+    margin: 0 360px 0 0;
+    text-align: center;
+}
+
+.bttn-Linkedin,
+.bttn-Github,
+.bttn-Instagran,
+.bttn-Gmail {
+    display: inline-flex;
+    margin: 0 30px;
+}
+
+.bttn-Linkedin img,
+.bttn-Github img,
+.bttn-Instagran img,
+.bttn-Gmail img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    transition: transform 0.1s;
+}
+
+.bttn-Linkedin:hover img,
+.bttn-Github:hover img,
+.bttn-Instagran:hover img,
+.bttn-Gmail:hover img {
+    transform: scale(1.1);
+}
+
+/* <ABOUT ME> */
+.margin-aboutme {
+    padding-top: 3%;
+    margin-top: 140px;
+}
+
+h3 {
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+
+.pic {
+    margin-top: 2.5%;
+    padding-right: 4%;
+    display: flex;
+    float: right;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.marginFoto-irlpfp {
+    height: auto;
+    float: right;
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+    border-radius: 5%;
+}
+
+.container-irlpfp {
+    width: 280px;
+    /* ajusta el ancho*/
+    height: 320px;
+    /* ajusta la altura */
+    border-radius: 5%;
+    overflow: hidden;
+    /* oculta cualquier parte de la imagen que se desborde */
+}
+
+.irl-pfp {
+    width: 100%;
+    /* asegura que la imagen llene todo el contenedor */
+    height: auto;
+    /* permite que la altura se ajuste automáticamente */
+}
+
+.irl-pfp,
+.marginFoto-irlpfp:hover {
+    animation: shake-rotate 0.35s ease;
+}
+
+@keyframes shake-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-2deg);
+    }
+
+    50% {
+        transform: rotate(2deg);
+    }
+
+    75% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.txtsobre-mi {
+    width: 50%;
+    padding: 0 5% 0 16%;
+}
+
+#txtsobre-mi p {
+    text-align: justify;
+    font-size: 25px;
+}
+
+.margin-imagenes {
+    display: flex;
+    justify-content: center;
+}
+
+.Imagenes img {
+    width: 60px;
+    height: 64px;
+    margin: 10px;
+}
+
+/* <EDUCATION> */
+.container-academic {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container-academic p {
+    font-size: 20px !important;
+}
+
+h4 {
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.Edu-li {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    gap: 100px;
+    padding: 0%;
+}
+
+.Edu-Element {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-imagenes_academic {
+    max-height: max-content;
+}
+
+.container-imagenes_academic img {
+    width: 65%;
+}
+
+.esime:hover,
+.Cisco:hover,
+.alura:hover {
+    translate: 0 -4px;
+    transition: all 0.1s ease-in;
+}
+
+/* <EXPERIENCE> */
+
+.titulo-exp {
+    padding-top: 60px;
+}
+
+.div-experiencia {
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    margin: 2% .5%;
+}
+
+.background-card {
+    background-color: #171717a1;
+    width: 75%;
+    display: flex;
+    margin: auto;
+    border-radius: 30px 0 30px;
+}
+
+.background-card:hover {
+    background-color: #000000be;
+    transition: all 0.1s ease-in;
+}
+
+.izq {
+    float: left;
+}
+
+.der {
+    float: right;
+}
+
+.imagen-card {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 2.5% 2%;
+}
+
+.imagen-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px #0000002d;
+    transform: 0.5s;
+}
+
+.descripcion-card {
+    width: 60%;
+    margin: 4%;
+    display: flex;
+    padding-right: 3%;
+    font-size: 20px;
+    align-items: center;
+    color: #f2f2f2;
+}
+
+/* <PROYECTS> */
+
+.seccion-titulo {
+    color: black;
+    font-weight: 600;
+    padding: 80px 0 80px 0;
+}
+
+.container {
+    height: 760px;
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: auto;
+}
+
+.columna {
+    background-color: #bfe51a;
+    padding: 20px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    transition: all 0.1s ease-in;
+}
+
+.columna:hover {
+    color: white;
+    background-color: #000000be;
+}
+
+.col-md-4 {
+    width: 300px;
+    height: 315px;
+}
+
+/* Enlaces proyectos */
+a {
+    text-decoration: none;
+}
+
+.iconos-contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.iconos-contenedor i {
+    font-size: 20px;
+    color: black;
+    padding: 2px 8px;
+    border-radius: 60%;
+}
+
+/* Detalles */
+.proyectos-titulo {
+    font-size: large;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.proyectos p:not(.proyectos-titulo) {
+    font-size: medium;
+    text-align: left;
+}
+
+/* Badges */
+.badges-contenedor {
+    font-size: small;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.badge {
+    margin: 6px;
+    color: rgb(255, 255, 255) !important;
+    background-color: rgba(0, 0, 0, 0.527) !important;
+    border-radius: 5px;
+}
+
+
+/* <FOOTER> */
+
+footer {
+    text-align: center;
+    width: 100%;
+    height: max-content;
+}
+
+.Copyrigth {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.727);
+    font-size: 12px;
+}
+
+.social2 {
+    margin-top: 100px;
+}
+
+.bttn-Linkedin2,
+.bttn-Github2,
+.bttn-Instagram2,
+.bttn-Gmail2 {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.bttn-Linkedin2 img,
+.bttn-Github2 img,
+.bttn-Instagram2 img,
+.bttn-Gmail2 img {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.bttn-Linkedin2:hover img,
+.bttn-Github2:hover img,
+.bttn-Instagram2:hover img,
+.bttn-Gmail2:hover img {
+    transform: scale(1.1);
+}
+
+/* <RESPONSIVE PAGE> */
+@media screen and (max-width: 1024px) {
+
+    .content {
+        padding-top: 85px;
+    }
+
+    .nav-box {
+        position: static;
+        padding: 0;
+    }
+
+    nav {
+        top: 0;
+    }
+
+    .margin-pfp {
+        float: none;
+        margin: auto;
+        width: fit-content;
+    }
+
+    .container-pfp {
+        width: 140px;
+        /* ajusta el ancho*/
+        height: 140px;
+        /* ajusta la altura */
+        border-radius: 50%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+        overflow: hidden;
+        /* oculta cualquier parte de la imagen que se desborde */
+    }
+
+    .pfp:hover {
+        transform: none;
+    }
+
+    .margin-txtpresentacion {
+        width: auto;
+        margin-top: 40px;
+        float: none;
+    }
+
+    h1,
+    h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #principal p {
+        margin: 0 35px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: inherit;
+        font-size: 18px;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .social {
+        margin: auto;
+        text-align: center;
+    }
+
+    .bttn-Linkedin,
+    .bttn-Github,
+    .bttn-Instagran {
+        display: inline-flex;
+        margin: 20px 20px;
+    }
+
+    .bttn-Linkedin img,
+    .bttn-Github img,
+    .bttn-Instagran img {
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+        transition: transform 0.2s;
+    }
+
+    h3 {
+        font-size: 30px;
+        color: black;
+        text-align: center;
+        margin: 50px 0 5px;
+    }
+
+    .irl-pfp,
+    .marginFoto-irlpfp:hover {
+        animation: none;
+    }
+
+    .irl-pfp:hover {
+        animation: none;
+    }
+
+    .txtsobre-mi {
+        margin: auto;
+    }
+
+    #txtsobre-mi p {
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    .margin-imagenes {
+        margin: auto;
+    }
+
+    .Imagenes img {
+        width: 30px;
+        height: 32px;
+    }
+
+    .esime:hover,
+    .Cisco:hover,
+    .alura:hover {
+        translate: none;
+    }
+
+    .Edu-li li {
+        display: inline-block;
+        width: 20%;
+        margin: 0 2%;
+        padding: 25px 30px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .nav-box a:not(.icon) {
+        display: none;
+    }
+
+    .nav-box a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-box.responsive {
+        position: relative;
+    }
+
+    .nav-box.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .nav-box.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .marginFoto-irlpfp {
+        display: none;
+    }
+
+    .irl-pfp {
+        display: none;
+    }
+
+    .container-irlpfp {
+        display: none;
+    }
+
+    .irl-pfp:hover {
+        animation: none;
+    }
+
+    .txtsobre-mi {
+        width: fit-content;
+        padding: 0;
+    }
+
+    #txtsobre-mi p {
+        font-size: 13px;
+
+    }
+
+    .margin-imagenes {
+        margin: 10px 30px;
+    }
+
+    .Imagenes img {
+        width: 30px;
+        height: 32px;
+        margin: 0 10px;
+    }
+
+    .Edu-li li {
+        padding-left: 10px;
+    }
+
+    .container-academic {
+        align-self: center;
+        padding-left: 0;
+    }
+
+    .container-imagenes_academic img {
+        width: 20%;
+        padding: auto;
+    }
+
+    .container-academic li {
+        width: fit-content;
+    }
+
+    .esime:hover,
+    .Cisco:hover,
+    .alura:hover {
+        translate: none;
+    }
+}
+
+/* </RESPONSIVE PAGE> */
